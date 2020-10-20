@@ -1,5 +1,5 @@
 body 
-{background-color: #1F2833;
+{background-color: gray;
 }
 h1 
 {color:#66FCF1;
@@ -16,8 +16,10 @@ h6
 {color: #45A29E;  
 }
 p
-{color: #45A29E;
-  text-align:center;
+{
+	/*Colour temporarily until on top of*/
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 table
 {color: #45A29E;
@@ -41,4 +43,9 @@ a:hover
 li
 {color: #45A29E,font:15px,arial,sans-serif;
  text-align:center;
+}
+
+.map
+{
+  max-width: 100%;
 }
