@@ -2,6 +2,53 @@
 
 <html>
 
-<img src="img/TopShooter Map V1.0.png">
+<head>
+	<title>Top Shooter</title>
+		<!-- Website Meta Tags -->
+		<!-- Ref: https://www.w3schools.com/tags/tag_meta.asp -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Mass Multiplayer Shooting Game">
+		<meta name="keywords" content="Shooter, Game, Pixel, Baylle Royale ">
+		<meta name="author" content="Top Shooter">
+		
+		<!-- External Stylesheet -->
+		<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+<script>
+<!-- Timer for HUD -->
+<!-- Reference: https://stackoverflow.com/questions/46220382/javascript-count-up-timer -->
+var countDownDate = localStorage.getItem('startDate');
+if (countDownDate) {
+    countDownDate = new Date(countDownDate);
+} else {
+    countDownDate = new Date();
+    localStorage.setItem('startDate', countDownDate);
+}
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = now - countDownDate.getTime();
+
+    // Time calculations for days, hours, minutes and seconds
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = "Time: " + minutes + ":" + seconds;
+}, 1000);
+
+</script>
+
+<p id="demo"></p>
+
+<img class = "map" src="img/TopShooter Map V1.0.png">
+
+</body>
 
 </html>
