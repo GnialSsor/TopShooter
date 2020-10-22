@@ -44,6 +44,11 @@ li
 {color: #45A29E,font:15px,arial,sans-serif;
  text-align:center;
 }
+table
+{
+	table-layout: fixed;
+	width: 100%;
+}
 
 .map
 {
