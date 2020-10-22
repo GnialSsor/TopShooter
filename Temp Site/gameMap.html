@@ -16,6 +16,10 @@
 </head>
 
 <body>
+<!-- Displays Game Map -->
+<img class = "map" src="img/TopShooter Map V1.0.png">
+
+
 <script>
 <!-- Timer for HUD -->
 <!-- Reference: https://stackoverflow.com/questions/46220382/javascript-count-up-timer -->
@@ -40,14 +44,22 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = "Time: " + minutes + ":" + seconds;
+    document.getElementById("timer").innerHTML = "Time: " + minutes + ":" + seconds;
 }, 1000);
 
 </script>
 
-<p id="demo"></p>
-
-<img class = "map" src="img/TopShooter Map V1.0.png">
+<!-- Displays information of game and holds buttons to change options and exit game -->
+<table>
+<thead>
+<tr>
+<th><p id="timer"></p></th>
+<th><p>Score:</p></th>
+<th><button type="button" onclick="">Options</button>
+<button type="button" onclick="alert('Are you sure?')">Exit Game</button></th>
+</tr>
+</thead>
+</table>
 
 </body>
 
