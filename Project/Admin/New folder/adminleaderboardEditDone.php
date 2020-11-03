@@ -1,5 +1,5 @@
 <?php
-    include("navigationbar.php"); /* includes the navbar */
+    include("navbar.php"); /* includes the navbar */
     echo "</nav>";
 
 if($_SESSION['login']=="admin"){
@@ -14,7 +14,7 @@ include("databaseconnection.php");  /* includes the connection to the database *
    $leaderboardid = $_POST['leaderboardid'];
    $position = $_POST['position'];
  
-   $query = "UPDATE `leaderboard` SET `username`='".$username."', `score`='".$score."',`users.id`='".$usersid."',`position`= '".$position."' WHERE `leaderboardid` = $leaderboardid";
+   $query = "UPDATE `users` SET `username`='".$username."', `score`='".$score."',`users.id`='".$usersid."',`position`= '".$position."' WHERE `leaderboard.id` = $leaderboardid";
    /* updates the user tables using data from the form*/
    $result = mysqli_query($connection, $query);
    

@@ -20,8 +20,8 @@ if($_SESSION['login']=="admin"){
     <a href="adminleaderboardEdit.php">To edit leaderboard data</a><br>
     <a href="adminleaderboardDelete.php">To remove scores from leaderboard</a><br>
                 <h3> Feedback Data </h3>
-    <a href="adminfeedbackEdit.php">To edit feedback</a><br>
-    <a href="adminfeedbackDelete.php">To remove feedback</a><br>
+    <a href="adminleaderboardEdit.php">To edit feedback</a><br>
+    <a href="adminleaderboardDelete.php">To remove feedback</a><br>
         <!--links to access the functions of admin panel -->
     </div>
 </body>
