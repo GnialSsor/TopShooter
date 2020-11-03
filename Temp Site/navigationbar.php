@@ -27,9 +27,10 @@
   <!--- set appropriate variable file names for rest of files (logout.php, aboutus.php etc) -->      
         <?php  
         session_start();
-              $_SESSION['id'];
-        $userid = $_SESSION['id'];
+      error_reporting(0);
            if ($_SESSION['login'] == "regular"){
+               $_SESSION['id'];
+        $id = $_SESSION['id'];
                echo "<li class='nav-item active'>";
                echo "<a class='nav-link' href='home.php'>Home<span class='sr-only'>(current)</span></a>";
                echo "</li>";
@@ -47,8 +48,10 @@
                 </li>";
                
            }elseif ($_SESSION['login'] == "admin"){
+               $_SESSION['id'];
+        $id = $_SESSION['id'];
                echo "<li class='nav-item active'>";
-               echo "<a class='nav-link' href='AdminAreaMain.php'>Admin Menu <span class='sr-only'>(current)</span></a>";
+               echo "<a class='nav-link' href='AdminMain.php'>Admin Menu <span class='sr-only'>(current)</span></a>";
                echo "</li>";
                echo "<li class='nav-item'>
                     <a class='nav-link' href='logout.php'>Logout</a>
@@ -58,7 +61,7 @@
                <a class='nav-link' href='home.php'>Home</a>
                 </li>";
                 echo "<li class='nav-item'>
-                    <a class='nav-link' href='Membership.php'>Login</a>
+                    <a class='nav-link' href='login.php'>Login</a>
                 </li>";
                echo "<li class='nav-item'>
                     <a class='nav-link' href='aboutus.php'>About Us</a>
