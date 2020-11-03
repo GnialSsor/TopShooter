@@ -13,11 +13,57 @@
 		
 		<!-- External Stylesheet -->
 		<link rel="stylesheet" href="css.css">
+
+	<!-- Ref: https://www.includehelp.com/code-snippets/move-object-with-arrow-keys-using-javascript-function.aspx -->
+	<!-- To make the sprite move -->
+	<script type="text/javascript">
+			//init object globally
+			var objImage= null;
+			function init(){
+				objImage=document.getElementById("yellowSprite");				
+				objImage.style.position='relative';
+				objImage.style.left='0px';
+				objImage.style.top='0px';
+			}
+			function getKeyAndMove(e){				
+				var key_code=e.which||e.keyCode;
+				switch(key_code){
+					case 37: //left arrow key
+						moveLeft();
+						break;
+					case 38: //Up arrow key
+						moveUp();
+						break;
+					case 39: //right arrow key
+						moveRight();
+						break;
+					case 40: //down arrow key
+						moveDown();
+						break;						
+				}
+			}
+			function moveLeft(){
+				objImage.style.left=parseInt(objImage.style.left)-5 +'px';
+			}
+			function moveUp(){
+				objImage.style.top=parseInt(objImage.style.top)-5 +'px';
+			}
+			function moveRight(){
+				objImage.style.left=parseInt(objImage.style.left)+5 +'px';
+			}
+			function moveDown(){
+				objImage.style.top=parseInt(objImage.style.top)+5 +'px';
+			}
+			window.onload=init;
+		</script>
 </head>
 
-<body>
-<!-- Displays Game Map -->
-<img class = "map" src="img/TopShooter Map V1.0.png">
+
+
+
+<body onkeydown='getKeyAndMove(event)'>
+<img id="yellowSprite"></img>
+</body>
 
 
 <script>
@@ -49,6 +95,7 @@ var x = setInterval(function() {
 
 </script>
 
+<footer>
 <!-- Displays information of game and holds buttons to change options and exit game -->
 <table>
 <thead>
@@ -60,7 +107,8 @@ var x = setInterval(function() {
 </tr>
 </thead>
 </table>
+</footer>
 
-</body>
+
 
 </html>
