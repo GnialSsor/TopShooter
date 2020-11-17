@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css.css" >
 </head>
 <?php
- include("navbar.php"); /* includes the navbar */
+ include("navigationbar.php"); /* includes the navbar */
  include("databaseconnection.php");  /* includes the connection to the database */
 if($_SESSION['login']=="admin"){
     }else{header("Location:login.php" );} /* if not logged in as admin directs them to login page */

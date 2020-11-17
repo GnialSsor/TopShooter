@@ -1,6 +1,6 @@
 
 <?php
-    include("navbar.php"); /* includes the navbar */
+    include("navigationbar.php"); /* includes the navbar */
     echo "</nav>";
 ?>
 <html>

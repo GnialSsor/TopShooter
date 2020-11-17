@@ -1,5 +1,5 @@
 <?php
-    include("navbar.php"); /* includes the navbar */
+    include("navigationbar.php"); /* includes the navbar */
     echo "</nav>";
   
 if($_SESSION['login']=="admin"){

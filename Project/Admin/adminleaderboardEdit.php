@@ -1,5 +1,5 @@
 <?php
-    include("navbar.php"); /* includes the navbar */
+   include("navigationbar.php"); /* includes the navbar */
     echo "</nav>";
  ?> 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
             
             New User ID:<input type="text" name="users.id" required><br><br>
 
-            New Leaderboard ID:<input type="text" name="leaderboardid" required><br><br>
+            Leaderboard ID to Update:<input type="text" name="leaderboardid" required><br><br>
 
             New Position:<input type="text" name="position" required><br><br>
             

@@ -1,5 +1,5 @@
 <?php
-    include("navbar.php"); /* includes the navbar */
+    include("navigationbar.php"); /* includes the navbar */
     echo "</nav>";
 
 if($_SESSION['login']=="admin"){
@@ -13,10 +13,10 @@ include("databaseconnection.php");  /* includes the connection to the database *
    $surname = $_POST['surname'];
    $email = $_POST['email'];
    $review = $_POST['review'];
-   $usersid = $_POST['users.id'];
+   $usersid = $_POST['usersid'];
    $feedbackid = $_POST['feedbackid'];
  
-   $query = "UPDATE `feedback` SET `username`='".$username."', `forename`='".$forename."',`email`='".$email."',`review`= '".$review."',`usersid`= '".$usersid."' WHERE `feedback.id` = $feedbackid";
+   $query = "UPDATE `feedback` SET `username`='".$username."', `forename`='".$forename."',`surname`='".$surname."',`email`='".$email."',`review`= '".$review."',`users.id`= '".$usersid."' WHERE `feedbackid` = $feedbackid";
    /* updates the user tables using data from the form*/
    $result = mysqli_query($connection, $query);
    

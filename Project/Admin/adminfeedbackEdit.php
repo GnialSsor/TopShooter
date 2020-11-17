@@ -1,5 +1,5 @@
 <?php
-    include("navbar.php"); /* includes the navbar */
+    include("navigationbar.php"); /* includes the navbar */
     echo "</nav>";
  ?> 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
 
             New Username: <input type="text" name="username" required><br><br>
             
-            New Forename:<input type="text" name="Forename" required><br><br>
+            New Forename:<input type="text" name="forename" required><br><br>
             
             New Surname:<input type="text" name="surname" required><br><br>
 
@@ -30,9 +30,9 @@
 
             New Review:<input type="text" name="review" required><br><br>
             
-            New User ID:<input type="text" name="users.id" required><br><br>
+            New User ID:<input type="text" name="usersid" required><br><br>
             
-            New Feedback ID:<input type="text" name="feedbackid" required><br><br>
+            Feedback ID to Update:<input type="text" name="feedbackid" required><br><br>
             
             
 
@@ -64,10 +64,10 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 echo "<form action='' method='post'>";
 echo "<tr>";
 echo "<td><input type='text' name='username' value='".$row['username']."'</td>";
-echo "<td><input type='text' name='score' value='".$row['score']."'</td>";
-echo "<td><input type='text' name='users.id' value='".$row['users.id']."'</td>";
-echo "<td><input type='text' name='password' value='".$row['leaderboardid']."'</td>";
-echo "<td><input type='integer' name='position' value='".$row['position']."'</td>";
+echo "<td><input type='text' name='forename' value='".$row['forename']."'</td>";
+echo "<td><input type='text' name='surname' value='".$row['surname']."'</td>";
+echo "<td><input type='text' name='email' value='".$row['email']."'</td>";
+echo "<td><input type='integer' name='review' value='".$row['review']."'</td>";
 echo "<td><input type='Integer' name='users.id' value='".$row['users.id']."'</td>";
 echo "<td><input type='integer' name='feedbackid' value='".$row['feedbackid']."'</td>";
 
