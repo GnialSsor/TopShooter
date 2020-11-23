@@ -3,8 +3,7 @@
     include("databaseconnection.php"); /* This will include the database connection */
 
 /*Creates button to access game */
-'<div class="container">
+echo '<div class="container">
 <a href=gameMap.php class="btn btn-primary">Play</a>
 </div>'
-    
-;} ?>
+    ;?>
