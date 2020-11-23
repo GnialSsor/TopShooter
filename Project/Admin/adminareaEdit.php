@@ -65,7 +65,7 @@ echo "<tr>";
 echo "<td><input type='text' name='forename' value='".$row['forename']."'</td>";
 echo "<td><input type='text' name='surname' value='".$row['surname']."'</td>";
 echo "<td><input type='text' name='username' value='".$row['username']."'</td>";
-echo "<td><input type='text' name='password' value='".$row['Password']."'</td>";
+echo "<td><input type='text' name='password' value='".$row['password']."'</td>";
 echo "<td><input type='integer' name='UserType' value='".$row['UserType']."'</td>";
 echo "<td><input type='integer' name='email' value='".$row['email']."'</td>";
 echo "<td><input type='integer' name='ID' value='". $row['ID']."'</td>";

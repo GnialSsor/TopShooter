@@ -2,7 +2,6 @@
     include("navigationbar.php"); /* includes the navbar */
     include("databaseconnection.php");  /* includes the connection to the database */
 ?>
-<link rel="stylesheet" href="css.css" >
 <html>
 <body>
 <form action ="registerdone.php" method="post">
