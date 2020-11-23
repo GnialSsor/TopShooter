@@ -1,0 +1,66 @@
+body 
+{background-color: #1F2833;
+}
+h1 
+{color:#66FCF1;
+    text-align: center;
+}
+h2 
+{color:#66FCF1;
+    text-align: center;
+}
+h3 
+{color:#66FCF1;
+}
+h6
+{color: #45A29E;  
+}
+p
+{color: #45A29E;
+  text-align:center;
+}
+table
+{color: #45A29E;
+ border: #45A29E;
+}
+form
+{color: #45A29E;
+}
+btn
+{color: #1F2833;    
+}
+a:link 
+{color: #45A29E;
+}
+a:visited
+{color: #45A29E;
+}
+a:hover
+{color: #45A29E;
+}
+li
+{color: #45A29E,font:15px,arial,sans-serif;
+ text-align:center;
+}
+.form-group .form-control {
+    width: 50%;
+}
+table {
+    margin: 0 auto; 
+    align-self: center;
+    color: white;
+    border: 1px solid black;
+    
+}
+tr {
+    background-color: darksalmon;
+}
+th {
+        margin-left: 80px;
+        background-color: #F15757;
+        color: white;
+}
+tbody {
+    color: white;
+    font-weight: bold;
+}
