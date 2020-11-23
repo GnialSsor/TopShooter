@@ -38,13 +38,7 @@
                     <a class='nav-link' href='logout.php'>Logout</a>
                 </li>";
                 echo "<li class='nav-item'>
-                    <a class='nav-link' href='aboutus.php'>About Us</a>
-                </li>";
-                echo "<li class='nav-item'>
-                    <a class='nav-link' href='cart.php'>Cart</a>
-                </li>";
-               echo "<li class='nav-item'>
-                    <a class='nav-link' href='userprofile.php'>Profile</a>
+                    <a class='nav-link' href='contactus.php'>Contact Us</a>
                 </li>";
                
            }elseif ($_SESSION['login'] == "admin"){
@@ -64,7 +58,7 @@
                     <a class='nav-link' href='login.php'>Login</a>
                 </li>";
                echo "<li class='nav-item'>
-                    <a class='nav-link' href='aboutus.php'>About Us</a>
+                    <a class='nav-link' href='contactus.php'>Contact Us</a>
                 </li>";
                           }
         

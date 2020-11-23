@@ -11,11 +11,13 @@
       <h3>Please use the form below to contact us:</h3>
       
 
-      <form>
-            Username:<input type="text" name="Username" required><br><br>
+      <form action ="contactusDone.php" method="post">
+            Email:<input type="text" name="email" required><br><br>
             
-            Message:<input type="text" name="Message" required><br><br>
+            Message:<input type="text" name="message" required><br><br>
 
             <input type="submit" name="Submit" value="Submit">
 
       </form>
+    </body>
+</html>
