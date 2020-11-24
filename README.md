@@ -7,3 +7,5 @@ To run this you should use XAMPP version 7.4.12 which can be found here: https:/
 When installing you should install PHP and MySQL. After doing this move the game files to a folder inside your XAMPP install called htdocs.
 
 PHP version installed should be 7.4.11.
+
+For all files, please click the TopShooterGame folder.
