@@ -1,0 +1,29 @@
+function updateGameArea() {
+  var x, height, gap, minHeight, maxHeight;
+  for (while playerDeath == false) {
+    if (bullet.crashWith(Player[i])) {
+      dead = true;
+      return deathscreen;
+    }
+  }
+  GameArea.clear();
+  GameArea.frameNo += 1;
+  if (GameArea.frameNo == 1 || everyinterval(150)) {
+    x = GameArea.canvas.width;
+    minHeight = 300;
+    maxHeight = 300;
+    height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+    gap = Math.floor(Math.random()*(20)+10);
+    Wall.push(new component(10, height, "red", x, 0));
+    Wall.push(new component(10, x - height - gap, "red", x, height + gap));
+  }
+  for (i = 0; i < Bullet.length; i += 1) {
+    Bullet[i].speedX = -1;
+    Bullet[i].newPos();
+    Bullet[i].update();
+  }
+  Score.text = "SCORE: " + myGameArea.frameNo;
+  Score.update();
+  GamePiece.newPos();
+  GamePiece.update();
+}
